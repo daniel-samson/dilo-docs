@@ -16,7 +16,7 @@ To use Dilo, first install deno. Then you can add it to your project using deno:
 Usage
 ----------------
 
-.. code-block:: typescript
+.. code-block:: javascript
    import { Dilo } from "@danielsamson/dilo";
 
    const rules = {
