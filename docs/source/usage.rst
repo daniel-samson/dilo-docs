@@ -6,29 +6,33 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use Dilo, first install deno. Then you can add it to your project using deno:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   deno add jsr:@danielsamson/dilo
 
-Creating recipes
+
+Usage
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+.. code-block:: typescript
+    import { Dilo } from "@danielsamson/dilo";
 
-.. autofunction:: lumache.get_random_ingredients
+    const rules = {
+      foo: "required|numeric",
+      bar: "sometimes|string",
+      baz: "nullable|boolean",
+    };
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+    const request = Dilo.make(rules);
+    const errors = request.validate({ foo: "1", bar: "bar", baz: true });
 
-.. autoexception:: lumache.InvalidKindError
+    if (errors) {
+      for (const field of Object.keys(errors)) {
+        console.log(field, errors[field]);
+      }
+    }
 
-For example:
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
 
