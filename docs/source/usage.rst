@@ -17,6 +17,7 @@ Usage
 ----------------
 
 .. code-block:: javascript
+
     import { Dilo } from "@danielsamson/dilo";
 
     const rules = {
