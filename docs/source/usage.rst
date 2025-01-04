@@ -17,22 +17,22 @@ Usage
 ----------------
 
 .. code-block:: javascript
-   import { Dilo } from "@danielsamson/dilo";
+    import { Dilo } from "@danielsamson/dilo";
 
-   const rules = {
+    const rules = {
      foo: "required|numeric",
      bar: "sometimes|string",
      baz: "nullable|boolean",
-   };
+    };
 
-   const request = Dilo.make(rules);
-   const errors = request.validate({ foo: "1", bar: "bar", baz: true });
+    const request = Dilo.make(rules);
+    const errors = request.validate({ foo: "1", bar: "bar", baz: true });
 
-   if (errors) {
+    if (errors) {
      for (const field of Object.keys(errors)) {
       console.log(field, errors[field]);
      }
-   }
+    }
 
 
 
