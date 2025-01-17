@@ -5,15 +5,17 @@ Dilo Documentation
 
 ## Installation
 
-.. code-block:: console
+```sh
     brew install python3
     pip3 install sphinx --break-system-packages
     pip3 install sphinx-rtd-theme --break-system-packages
     pip3 install sphinx-autobuild --break-system-packages
+```
 
 ## Building
 
-.. code-block:: console
+```sh
     sphinx-autobuild docs docs/build/html
     cd docs
     make html
+```
