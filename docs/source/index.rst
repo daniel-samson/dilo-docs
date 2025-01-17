@@ -1,22 +1,16 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to Dilo's documentation!
+################################
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+**Dilo** (/daɪˌloʊ/ dy-LOH) is a validation library for deno. The name is short for "Dilophosaurus". It is essentially a port of laravel's validation library.
 
 .. note::
-
    This project is under active development.
 
 Contents
 --------
 
 .. toctree::
-
-   usage
-   api
+    Getting Started <getting_started>
+    Initial Rules <initial_rules>
+    Basic Types <basic_types>
+    Acceptance Rules <acceptance>

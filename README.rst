@@ -1,9 +1,19 @@
-Template for the Read the Docs tutorial
+Dilo Documentation
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+[Dilo](https://jsr.io/@danielsamson/dilo) is a validation library for deno.
 
-Read the tutorial here:
+## Installation
 
-https://docs.readthedocs.io/en/stable/tutorial/
+```sh
+brew install python3
+pip3 install sphinx --break-system-packages
+pip3 install sphinx-rtd-theme --break-system-packages
+pip3 install sphinx-autobuild --break-system-packages
+```
+
+## Building
+
+```sh
+sphinx-autobuild docs docs/build/html
+```
