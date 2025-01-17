@@ -14,3 +14,5 @@ Contents
     Initial Rules <initial_rules>
     Basic Types <basic_types>
     Acceptance Rules <acceptance>
+    Size Rule <size>
+    Compare Rules <compare>
