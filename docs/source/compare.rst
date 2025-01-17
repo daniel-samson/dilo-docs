@@ -100,3 +100,25 @@ uuid
 ----
 
 The field under validation must be a valid RFC 4122 (version 1, 3, 4, or 5) universally unique identifier (UUID).
+
+
+
+ip
+--
+
+The field under validation must be an IP address.
+
+ipv4
+----
+
+The field under validation must be an IPv4 address.
+
+ipv6
+----
+
+The field under validation must be an IPv6 address.
+
+mac_address
+-----------
+
+The field under validation must be a MAC address.
