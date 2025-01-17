@@ -1,19 +1,23 @@
-Usage
-=====
+===============
+Getting Started
+===============
 
-.. _installation:
+Prerequisites
+-------------
+
+Dilo requires Deno to run. You can install Deno from https://deno.land.
 
 Installation
 ------------
 
-To use Dilo, first install deno. Then you can add it to your project using deno:
+Then add *dilo* to your project using deno add:
 
 .. code-block:: console
 
    deno add jsr:@danielsamson/dilo
 
 
-Usage
+Example
 ----------------
 
 .. code-block:: javascript
