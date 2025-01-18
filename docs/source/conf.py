@@ -6,8 +6,8 @@ project = 'Dilo'
 copyright = '2021, Dilo'
 author = 'Dilo'
 
-release = '0.3.0-alpha.1'
-version = '0.3.0-alpha.1'
+release = '0.3.0'
+version = '0.3.0'
 
 # -- General configuration
 
